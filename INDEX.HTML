@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Online - (Quiz Game)</title>
+        
+        <!-- STYLE - SHEET -->
+        <link rel="stylesheet" href="STYLE.CSS">
+
+        <!-- PAGE - LOGO -->
+        <link rel="icon" href="quiz-logo.png" type="img/icon">
+
+        <!-- FONT - AWESOME -->
+        <script src="https://kit.fontawesome.com/4712b32a59.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <!-- QUIZ (START - BUTTON) -->
+        <button id="start-quiz-button">
+            <i class="fas fa-gamepad"></i>
+            Start Quiz
+        </button>
+
+        <!-- QUIZ (INSTRUCTION) -->
+        <div class="quiz-instruction">
+            <p>Following, are some rule's for Quiz Application.</p>
+
+            <div class="quiz-info-list">
+                <div class="info-text">1. You will have only <span>15</span> seconds per each question.</div>
+                <div class="info-text">2. Once you select your answer, it can't be undone.</div>
+                <div class="info-text">3. You can't select any option once time goes off.</div>
+                <div class="info-text">4. You can't exit from the Quiz while you're playing.</div>
+                <div class="info-text">5. You'll get points on the basis of your correct answers.</div>
+            </div>
+
+            <div class="quiz-button">
+                <button id="exit-button">Exit Quiz</button>
+                <button id="continue-quiz">Continue Quiz</button>
+            </div>
+        </div>
+
+        <!-- QUIZ - BOX (QUESTION & ANSWER) -->
+        <div class="quiz-box">
+            <div class="quiz-text">
+                <p>Welcome, to Online - (Quiz Game)</p>
+                <div class="time">
+                    <p>Time Left</p>
+                    <span id="time-text">15</span>
+                </div>
+            </div>
+
+            <div class="question-text">
+                <!-- JAVA-SCRIPT -->
+            </div>
+
+            <div class="option-list">
+                <!-- JAVA-SCRIPT -->
+            </div>
+
+            <div class="question-index">
+                <div class="question-index-text">
+                    <span id="question-index-text">1</span> of <span>10</span> Questions
+                </div>
+
+                <button id="next-question-button">
+                    Next Question
+                </button>
+            </div>
+        </div>
+
+        <div class="result-box">
+            <div class="game-logo">
+                <img src="game-logo.png" alt="">
+            </div>
+
+            <p>You've Completed the 'Quiz - Game' !</p>
+
+            <div class="score-box" id="score-box">
+                <!-- JAVA - SCRIPT -->
+            </div>
+
+            <div class="result-button">
+                <button id="replay-quiz">
+                    <i class="fa-solid fa-reply"></i>
+                    Re-play Quiz
+                </button>
+
+                <button id="quit-quiz">
+                    <i class="fa fa-sign-out" aria-hidden="true"></i>
+                    Exit Quiz
+                </button>
+            </div>
+        </div>
+
+        <!-- MAIN (SCRIPT) -->
+        <script src="SCRIPT/SCRIPT.JS"></script>
+
+        <!-- QUESTION & ANSWER (SCRIPT) -->
+        <script src="SCRIPT/QUESTION.JS"></script>
+    </body>
+</html>
